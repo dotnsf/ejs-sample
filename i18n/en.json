@@ -1,0 +1,8 @@
+{
+  "index.title": "Main Page",
+  "index.body": "It's main page, here.",
+  "index.link_to_hello": "(Link to Hello page)",
+  "hello.title": "Hello Page",
+  "hello.body": "Welcome. This is hello page.",
+  "hello.link_to_index": "(Link to Main page)"
+}

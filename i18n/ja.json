@@ -1,0 +1,8 @@
+{
+  "index.title": "メインページ",
+  "index.body": "ここがメインページです。",
+  "index.link_to_hello": "（ハローページへ）",
+  "hello.title": "ハローページ",
+  "hello.body": "ここがハローページです。",
+  "hello.link_to_index": "（メインページへ）"
+}
