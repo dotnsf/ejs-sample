@@ -23,7 +23,14 @@ app.get( '/', function( req, res ){
 
 //. http://localhost:8080/hello にアクセスした時の処理
 app.get( '/hello', function( req, res ){
-  res.render( 'hello', {} );               //. hello.ejs を使って表示する
+  var name = 'World';
+  res.render( 'hello', { name: name } );   //. hello.ejs を使って表示する
+});
+
+//. http://localhost:8080/hello/* にアクセスした時の処理
+app.get( '/hello/:name', function( req, res ){
+  var name = req.params.name;
+  res.render( 'hello', { name: name } );   //. hello.ejs を使って表示する
 });
 
 
