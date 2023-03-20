@@ -33,6 +33,13 @@ app.get( '/hello/:name', function( req, res ){
   res.render( 'hello', { name: name } );   //. hello.ejs を使って表示する
 });
 
+//. http://localhost:8080/object にアクセスした時の処理
+app.get( '/object', function( req, res ){
+  var query = req.query;
+  console.log( query );
+  res.render( 'object', { query: query } );   //. object.ejs を使って表示する
+});
+
 
 var port = process.env.PORT || 8080;
 app.listen( port );

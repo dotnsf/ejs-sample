@@ -3,21 +3,26 @@
 <head>
 <meta charset="utf8"/>
 <meta http-equiv="pragma" content="no-cache"/>
-<title><%= __('index.title') %></title>
+<title><%= __('object.title') %></title>
 </head>
 <body>
-<h1><%= __('index.title') %></h1>
+<h1>Object</h1>
 
 <p>
-<%= __('index.body') %>
-</p>
-
-<p style="color: blue;">
-<a href="/hello"><%= __('index.link_to_hello') %></a>
+  <table border="1">
+<% if( query && typeof query == 'object' ){ 
+     Object.keys( query ).forEach( function( key ){ %>
+    <tr>
+      <td><%= key %></td>
+      <td><%= query[key] %></td>
+    </tr>
+<%   });
+  } %>
+  </table>
 </p>
 
 <p style="color: red;">
-<a href="/object"><%= __('index.link_to_object') %></a>
+<a href="/"><%= __('object.link_to_index') %></a>
 </p>
 
 </body>

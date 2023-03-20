@@ -2,7 +2,10 @@
   "index.title": "メインページ",
   "index.body": "ここがメインページです。",
   "index.link_to_hello": "（ハローページへ）",
+  "index.link_to_object": "(オブジェクトページへ)",
   "hello.title": "ハローページ",
   "hello.body": "ここがハローページです。",
-  "hello.link_to_index": "（メインページへ）"
+  "hello.link_to_index": "（メインページへ）",
+  "object.title": "オブジェクトページ",
+  "object.link_to_index": "(メインページへ)"
 }
